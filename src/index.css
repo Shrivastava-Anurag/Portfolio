@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.montserrat{
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+.montserrat-thin {
+  font-family: montserrat;
+  font-weight: 400;
+  
+}
+
+.montserrat-title {
+  font-family: montserrat;
+  font-weight: 300;
+  
+}
+
+.rubik-doodle {
+  font-family: Rubik Doodle Shadow;
+}
+
+.rubik-dirt {
+  font-family: Rubik Dirt;
 }
