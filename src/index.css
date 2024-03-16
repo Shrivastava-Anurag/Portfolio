@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,7 +32,7 @@ body {
 
 .montserrat-title {
   font-family: montserrat;
-  font-weight: 300;
+  font-weight: 400;
   
 }
 
@@ -34,4 +42,83 @@ body {
 
 .rubik-dirt {
   font-family: Rubik Dirt;
+}
+
+.cursor {
+  pointer-events: none;
+}
+
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.cursor__ball circle {
+  fill: #f7f8fa;
+}
+
+custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  pointer-events: none; /* Allow interactions with underlying elements */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Make sure it's above other elements */
+}
+
+.cursor-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;/* Customize the cursor appearance */
+}
+
+.rounded{
+  width: 50x;
+  height: 50px;
+  transition: transform 0.5s ease-out;
+}
+
+.pointed{
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+
+.parallax {
+  /* overflow: hidden; */
+  letter-spacing: 10px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
 }

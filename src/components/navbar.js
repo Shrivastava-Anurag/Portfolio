@@ -48,7 +48,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'rubik-dirt text-amber-50' : 'text-amber-50 hover:text-white',
-                          'rounded-md px-3 py-2 text-xl rubik-doodle'
+                          'rounded-md px-3 py-2 text-xl rubik-doodle hoverable'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden absolute">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -70,7 +70,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-300 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-base font-medium block'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

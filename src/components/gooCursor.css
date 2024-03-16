@@ -1,0 +1,33 @@
+  
+  .goo {
+    position: absolute;
+    top: 0;
+  }
+  
+  .ink-cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    filter: url("#goo");
+  }
+  
+  .ink-cursor span {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #282828;
+  }
+  
+  @media (max-width: 991px) {
+    .ink-cursor {
+      .ink-cursor span {
+        display: none;
+      }
+    }
+  }
+  
