@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Navbar from '../components/navbar';
 import RocketSVG from '../assets/rocket1.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -39,7 +38,7 @@ function Connect() {
 
     return(
         <>
-        <div className='flex flex-col items-center md:items-extend mt-20 md:flex-row '>
+        <div className='flex flex-col items-center md:items-extend mt-20 md:flex-row'>
         <div className='mx-20 mb-20'>
             <img className=' h-90 w-auto min-[550px]:w-80 md:w-auto' src={RocketSVG} ></img>
         </div>

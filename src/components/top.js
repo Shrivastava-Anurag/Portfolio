@@ -27,9 +27,9 @@ const Top = () => {
     <>
     <motion.div  style={{
         // Apply the translation effect based on the scroll position
-        transform: `rotate(${scrollX * 0.5}deg)`,
-        transition: 'transform 0.5s ease-out', // Add a smooth transition effect
-      }} className='fixed -bottom-20 -right-20 h-[290px] w-[290px] '>
+        transform: `rotate(${scrollX * 0.2}deg)`,
+        transition: 'transform 0.3s ease-out', // Add a smooth transition effect
+      }} className='fixed -bottom-20 -right-20 h-[290px] w-[290px]'>
     <ReactCurvedText
       width={370}
       height={300}

@@ -1,13 +1,12 @@
 import React from 'react';
 import Divider from '../components/divider';
+import StaggeredText from '../components/staggeredText';
  
 function Project() {
     return(
         <>
         <div className='mx-40 my-20'>
-        <div className='flex justify-center'>
-        <h1 className='text-amber-50 text-5xl sm:text-6xl md:text-8xl lg:text-name montserrat-title leading-tight'> PROJECTS </h1>
-        </div>
+        <StaggeredText text='PROJECTS' />
         <div className='flex flex-col my-10'>
             <div className='flex justify-center'>
                 <div className='size-7/12'>

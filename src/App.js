@@ -8,17 +8,17 @@ import Cursor from './components/cursor';
 import CustomCursor from './components/customCursor';
 import GooeyCursor from './components/gooCursor';
 import SlidingTape from './components/slidingTape';
+import ScrollPathFollower from './components/svgPath';
 
 function App() {
   return (
     <div className="App">
-    {/* <CustomCursor /> */}
     <Cursor />
-    {/* <GooeyCursor/> */}
+    <ScrollPathFollower />
     <About />
     <Skills />
     <SlidingTape />
-    {/* <Project /> */}
+    <Project />
     <Connect />
     </div>
   );
