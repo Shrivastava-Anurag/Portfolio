@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ReactCurvedText from 'react-curved-text'
 import Skull from '../assets/skull.svg'
 import { motion, useScroll } from "framer-motion"
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 
 const Top = () => {
@@ -46,9 +47,9 @@ const Top = () => {
       textPathProps={{"fill": "#fffbeb"}}
     />
     </motion.div>
-    <a className='fixed w-72 -bottom-2 -right-[65px] hoverable' href='/Home'>
+    <Link className='fixed w-72 -bottom-2 -right-[65px] hoverable' to='about'    spy={true} smooth={true} offset={0} duration={500}>
     <img className='' src={Skull}></img>
-    </a>
+    </Link>
      
 {/* <ReactCurvedText
       width={370}

@@ -19,26 +19,21 @@ function Connect() {
 
     const [icons, setIcons] = useState([
         { title: faInstagram, hover: false, link: 'https://www.instagram.com/anurag._.shrivastava/'},
-        { title: faLinkedin, hover: false },
-        { title: faGithub, hover: false },
-        { title: faEnvelope, hover: false },
+        { title: faLinkedin, hover: false, link: 'https://www.linkedin.com/in/shriv-anurag/' },
+        { title: faGithub, hover: false, link: 'https://github.com/Shrivastava-Anurag'},
+        { title: faEnvelope, hover: false, link: 'mailto:anuragbd28012003@gmail.com' },
       ]);
 
-    const handleMouseEnter = (index) => {
+    const toggleHover = (index) => {
         const updatedIcons = [...icons];
-        updatedIcons[index].hover = true;
+        updatedIcons[index].hover = !(updatedIcons[index].hover );
         setIcons(updatedIcons);
       };
     
-      const handleMouseLeave = (index) => {
-        const updatedIcons = [...icons];
-        updatedIcons[index].hover = false;
-        setIcons(updatedIcons);
-      };
 
     return(
         <>
-        <div className='flex flex-col items-center md:items-extend mt-20 md:flex-row'>
+        <div name='contact' className='flex flex-col items-center md:items-extend mt-20 md:flex-row'>
         <div className='mx-20 mb-20'>
             <img className=' h-90 w-auto min-[550px]:w-80 md:w-auto' src={RocketSVG} ></img>
         </div>
@@ -54,7 +49,7 @@ function Connect() {
             <div className='flex flex-row list-none my-10'>
             {icons.map((element, index) => (
                 <li key={index} className='mx-5 hoverable'>
-                <a href={element.link} target="_blank" rel="noopener noreferrer" onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseLeave(index)}>
+                <a href={element.link} target="_blank" rel="noopener noreferrer" onMouseEnter={() => toggleHover(index)} onMouseLeave={() => toggleHover(index)}>
                 <FontAwesomeIcon icon={element.title} style={{color: "#fffbeb",}} className={classNames(element.hover ? 'fa-bounce' : '', 'text-3xl', 'md:text-5xl')} />
                 </a>
                 </li>   

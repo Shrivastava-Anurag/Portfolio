@@ -5,7 +5,7 @@ import { motion, useInView, useAnimation} from "framer-motion";
 
 const skills = [
     {title: "Core", elements: ["JavaScript", "Java", "Python"]},
-    {title: "Frameworks", elements: ["React", "Node", "Flask"]},
+    {title: "Frameworks", elements: ["React.Js", "Node.Js", "Flask","Next.Js"]},
     {title: "Database & Libraries", elements: ["MongoDB", "Mongoose", "Redux", "Framer"]},
     {title: "Tools & Platforms", elements: ["Git", "Github", "Postman", "AWS-Basic"]},
 ];

@@ -22,7 +22,7 @@ function StaggeredText(word) {
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 transition={{staggerChildren: 0.1}}
-                className='text-amber-50 text-7xl sm:text-8xl md:text-9xl lg:text-name montserrat-title leading-tight'>
+                className='text-amber-50 text-5xl sm:text-8xl md:text-9xl lg:text-name montserrat-title leading-tight'>
                 {text.split('').map((char, index) => (
                     <motion.span className='inline-block' key={index} variants={revealAnimation}>
                     {char}

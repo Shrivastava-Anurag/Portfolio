@@ -26,13 +26,13 @@ function About() {
   }, []);
     return (
       <>
-      <div>
+      <div id='about'>
           <Top/>
         </div>
         <div>
           <Navbar />
         </div>
-        <div className=' overflow-hidden flex flex-col justify-center'>
+        <div className=' overflow-hidden flex flex-col justify-center mb-20'>
         <div>
             <img src={RocketSVG2} className='rotate-180 absolute top-0 size-4/5 mx-10 sm:m-0 sm:mx-20 md:size-1/2 md:mx-60 md:top-20 lg:hidden'></img>
         </div>
@@ -69,15 +69,15 @@ function About() {
         <div className='mt-10 md:mt-40 mx-10 md:mx-20   flex flex-col justify-center'>
           <img
             className='w-9/12 mb-20 md:w-6/5 max-[1300px]:lg:w-1/2 lg:w-2/5  h-auto mx-auto mb-8'
-            src={require('../assets/anurag_pic.jpeg')}
+            src={require('../assets/anurag.jpg')}
             alt='Anurag Shrivastava'
           />
-          <p className='text-left text-xl md:text-left text-amber-50 max-[1300px]:text-3xl max-[1400px]:mx-20  lg:mx-80 mb-10 font-sans font-light'>
+          <p className='text-left text-xl md:text-left text-amber-50 text-lg md:text-2xl max-[1300px]:lg:text-3xl max-[1400px]:lg:mx-20 lg:mx-80 font-sans font-light'>
             "Hello, I am Anurag Shrivastava, a <span className='font-medium'>MERN Stack</span> Developer, a coding enthusiast,
             and I love to code. I have made multiple projects using HTML/CSS,
             JavaScript, React, Node.js, MongoDB. <br></br> Welcome to my <span className='font-medium'>Portfolio!</span>"
           </p>
-          <p className='text-left text-xl md:text-left text-amber-50 text-lg md:text-2xl max-[1300px]:lg:text-3xl max-[1400px]:lg:mx-20 lg:mx-80 font-sans font-light'>
+          <p className='mt-10 text-left text-xl md:text-left text-amber-50 text-lg md:text-2xl max-[1300px]:lg:text-3xl max-[1400px]:lg:mx-20 lg:mx-80 font-sans font-light'>
             With 2 years of experience and a strong foundation in web development,
             I'm a dedicated developer. I'm skilled in languages like JavaScript, HTML and CSS. I'm also experienced with Python and Java,
             and I'm enthusiastic about staying informed on the latest

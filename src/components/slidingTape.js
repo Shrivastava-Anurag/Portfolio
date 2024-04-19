@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
-function ParallaxText({ children, baseVelocity = 100 }) {
+function ParallaxText({ children, baseVelocity = 100, }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -58,7 +58,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    */
   return (
     <div className="parallax">
-      <motion.div className="scroller text-3xl min-[600px]:text-5xl min-[800px]:text-6xl lg:text-9xl montserrat leading-tight bg-amber-50" style={{ x }}>
+      <motion.div className="scroller text-4xl min-[600px]:text-5xl min-[800px]:text-6xl lg:text-9xl montserrat leading-tight bg-amber-50" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
@@ -70,8 +70,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function SlidingTape() {
   return (
-    <section className="overflow-hidden h-screen py-28">
-    <div className="rotate-[15deg] mr-[530px]">
+    <section className="overflow-hidden h-[300px] md:h-screen pt-28 pb-0 mb-0 md:py-28">
+    <div className="rotate-[15deg] mr-[300px] md:mr-[530px]">
     <ParallaxText baseVelocity={-3}>Leader</ParallaxText>
     </div>
     <div className="-rotate-[15deg] mr-96">
