@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import RocketSVG from '../assets/rocket1.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -22,6 +22,7 @@ function Connect() {
         { title: faLinkedin, hover: false, link: 'https://www.linkedin.com/in/shriv-anurag/' },
         { title: faGithub, hover: false, link: 'https://github.com/Shrivastava-Anurag'},
         { title: faEnvelope, hover: false, link: 'mailto:anuragbd28012003@gmail.com' },
+        { title: faXTwitter, hover: false, link: 'https://twitter.com/shriv_anurag'}
       ]);
 
     const toggleHover = (index) => {

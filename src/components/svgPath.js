@@ -14,7 +14,7 @@ const ScrollPathFollower = () => {
   // const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
   return (
-    <div className='hidden md:absolute top-40 md:right-[400px] -z-50 '>
+    <div className='absolute top-40 -right-[10px] md:right-[50px] lg:right-[400px] -z-50 '>
     <svg width="639" height="5505" viewBox="0 0 639 6705" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_dd_31_3)">
     <motion.path style={{

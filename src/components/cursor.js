@@ -76,7 +76,7 @@ const Cursor = () => {
 
   return (
     <>
-      <div className="cursor">
+      <div className=" hidden lg:block cursor">
         <div className="cursor__ball cursor__ball--big" ref={bigBallRef}>
           <svg height="50" width="50">
             <circle cx="20" cy="20" r="20" strokeWidth="0"></circle>

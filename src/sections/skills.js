@@ -19,7 +19,7 @@ function Skills() {
 
     return(
         <>
-        <div id='skills' className='mx-10 mt-0 mb-0 md:my-20 flex flex-col md:mb-[700px] lg:mb-[600px]'>
+        <div id='skills' className='mx-10 mt-0 mb-0 md:mt-[-800px] flex flex-col md:mb-[700px] lg:mb-[600px] lg-absolute'>
 
             <StaggeredText text='SKILLS' />
 

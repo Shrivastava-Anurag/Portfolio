@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  cursor: none;
+@media (min-width: 768px) {
+  * {
+    cursor: none;
+  }
 }
 
+/* Show cursor on small screens */
+@media (max-width: 767px) {
+  * {
+    cursor: auto;
+  }
+}
 html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 body {
